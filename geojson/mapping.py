@@ -27,6 +27,7 @@ def is_mapping(obj):
 
 def to_mapping(obj):
 
+    # obj.__geo_interface__
     mapping = getattr(obj, GEO_INTERFACE_MARKER, None)
 
     if mapping is not None:
